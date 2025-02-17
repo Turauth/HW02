@@ -10,7 +10,7 @@
 class Person {
 // Define private integer attributes for start date and first and last names.
 protected:
-    std::string m_startDate {};
+    Date m_startDate {};
     std::string m_firstName {};
     std::string m_lastName {};
 
@@ -21,6 +21,9 @@ public:
 
     void setLastName(std::string input);
     std::string getLastName();
+
+    // Declare a specified constructor for the Person class.
+    Person(Date startDate, std::string firstName, std::string lastName);
 };
 
 // Add header guard (https://www.learncpp.com/cpp-tutorial/header-guards/).

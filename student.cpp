@@ -29,10 +29,15 @@ std::string Student::getMajor()
     return m_major;
 }
 
-// Define the implementation of the specific constructor, which will be used to manually set the start day, start month, start year, first name, last name, graduation year, and major
-// (https://www.learncpp.com/cpp-tutorial/default-constructors-and-default-arguments/).
-Student::Student(std::string startDate, std::string firstName, std::string lastName, int graduationYear, std::string major)
-    : m_graduationYear{ graduationYear }
+// Define the implementation of the specific constructor, which will be used to manually set the start date, first name, last name, 
+// graduation year, and major
+// (https://www.learncpp.com/cpp-tutorial/default-constructors-and-default-arguments/; 
+// https://stackoverflow.com/questions/7405740/how-can-i-initialize-base-class-member-variables-in-derived-class-constructor).
+Student::Student(Date startDate, std::string firstName, std::string lastName, int graduationYear, std::string major)
+    : m_startDate{ startDate }
+    , m_firstName{ firstName }
+    , m_lastName{ lastName }
+    , m_graduationYear{ graduationYear }
     , m_major{ major }
 {
 }

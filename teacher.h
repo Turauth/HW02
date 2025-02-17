@@ -5,7 +5,7 @@
 // Allow the use of std::string (https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring/).
 #include <string>
 
-#include "person.h"
+#include "person.cpp"
 
 class Teacher : public Person {
 // Define private integer attributes for department and title.
@@ -23,7 +23,7 @@ public:
 
     // Declare a specific constructor to assign the start day, start month, start year, first name, last name, department, and title
     // (https://www.learncpp.com/cpp-tutorial/default-constructors-and-default-arguments/; https://www.learncpp.com/cpp-tutorial/classes-and-header-files/).
-    Teacher(std::string startDate, std::string firstName, std::string lastName, std::string department, std::string title);
+    Teacher(Date startDate, std::string firstName, std::string lastName, std::string department, std::string title);
 
     // Declare a summary function.
     void summary();

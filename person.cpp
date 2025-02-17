@@ -28,3 +28,11 @@ std::string Person::getLastName()
 {
     return m_lastName;
 }
+
+// Implement the Person constructor.
+Person::Person(Date startDate, std::string firstName, std::string lastName)
+    : m_startDate{ startDate }
+    , m_firstName{ firstName }
+    , m_lastName{ lastName }
+{
+}
