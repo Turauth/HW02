@@ -32,9 +32,7 @@ std::string Teacher::getTitle()
 // Define the implementation of the specific constructor, which will be used to manually set the start day, start month, start year, first name, last name, department, and title
 // (https://www.learncpp.com/cpp-tutorial/default-constructors-and-default-arguments/).
 Teacher::Teacher(Date startDate, std::string firstName, std::string lastName, std::string department, std::string title)
-    : m_startDate{ startDate }
-    , m_firstName{ firstName }
-    , m_lastName{ lastName }
+    : m_person{ startDate, firstName, lastName }
     , m_department{ department }
     , m_title{ title }
 {

@@ -22,7 +22,7 @@ public:
     void setLastName(std::string input);
     std::string getLastName();
 
-    // Declare a specified constructor for the Person class.
+    // Declare the specified constructor for the Person class.
     Person(Date startDate, std::string firstName, std::string lastName);
 };
 

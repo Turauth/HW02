@@ -34,9 +34,7 @@ std::string Student::getMajor()
 // (https://www.learncpp.com/cpp-tutorial/default-constructors-and-default-arguments/; 
 // https://stackoverflow.com/questions/7405740/how-can-i-initialize-base-class-member-variables-in-derived-class-constructor).
 Student::Student(Date startDate, std::string firstName, std::string lastName, int graduationYear, std::string major)
-    : m_startDate{ startDate }
-    , m_firstName{ firstName }
-    , m_lastName{ lastName }
+    : m_person{ startDate, firstName, lastName }
     , m_graduationYear{ graduationYear }
     , m_major{ major }
 {
