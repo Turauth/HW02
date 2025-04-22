@@ -7,7 +7,7 @@
 
 #include "person.h"
 
-// Implement the getter and setter functions for first and last names 
+// Implement the getter and setter functions for first and last names and a getter function for start date
 // (slides; https://www.learncpp.com/cpp-tutorial/classes-and-header-files/).
 void Person::setFirstName(std::string input)
 {
@@ -27,6 +27,11 @@ void Person::setLastName(std::string input)
 std::string Person::getLastName()
 {
     return m_lastName;
+}
+
+Date Person::getStartDate()
+{
+    return m_startDate;
 }
 
 // Implement the Person constructor.

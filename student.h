@@ -5,12 +5,11 @@
 // Allow the use of std::string (https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring/).
 #include <string>
 
-#include "person.cpp"
+#include "person.h"
 
 class Student : public Person {
 // Define private integer attributes for graduation year and major.
 private:
-    Person m_person {m_startDate, m_firstName, m_lastName};
     int m_graduationYear {};
     std::string m_major {};
 

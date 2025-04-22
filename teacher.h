@@ -5,12 +5,11 @@
 // Allow the use of std::string (https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring/).
 #include <string>
 
-#include "student.cpp"
+#include "person.h"
 
 class Teacher : public Person {
 // Define private integer attributes for department and title.
 private:
-    Person m_person {m_startDate, m_firstName, m_lastName};
     std::string m_department {};
     std::string m_title {};
 
